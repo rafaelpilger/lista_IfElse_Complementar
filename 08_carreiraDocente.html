@@ -20,8 +20,25 @@
 
     // Entrada
     
-    // Processamento
+    const Carreira = Number(prompt("quantos anos de carreira o senhor pussui?"));
+    const Projeto = Number(prompt("informe a quantidade de projetos de pesquisa que ja coordenou?"));
+    const Extensão = Number(prompt("informe a quantidade de Projetos de Extensão que ja orientou?"));
+    const tcc = Number(prompt("informe a quantidade de TCCs que já orientou?"));
 
+    
+    // Processamento
+    const final = (Carreira * 2.5) + (Projeto * 5)  + (Extensão * 5) + (tcc * 3);
+
+    if(final <= 30){
+        alert(`CONVIDADO... classificação: ${final}`);
+    }
+    else if (final >= 30 && final <=50){
+        alert(`AGREGADO... classificação: ${final}`);
+    }
+    else if (final > 50){
+        alert(`TITULAR... classificação: ${final}`);
+    }
+    
     // Saída
 
 </script>

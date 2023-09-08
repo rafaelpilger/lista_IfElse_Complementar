@@ -12,8 +12,23 @@
     */
 
     // Entrada
-    
+
+    let salario = Number(prompt("Quanto vc recebe por mês?"))
+    let auxílio = prompt("Você deseja auxilio transporte? Sim-(S) || Não-(N)").trim().toUpperCase();
+    let transporte = prompt("você utiliza veiculo para se locomover para o trabalho? Sim-(S) || Não-(N)").trim().toUpperCase();
+    let publico = prompt("vc usa o transporte publico? Sim-(S) || Não-(N)");
+
     // Processamento
+    if(auxílio === "S"){
+        const final = salario*0.06
+        document.write(`ouve um desconto de 6% ent seu salario final ficou de R$${final-salario}`);
+    }
+    else if(transporte === "S"){
+        document.write(`ouve um acrecimo de 200 reis no salario final: R$${salario+200}`);
+    }
+    else if(publico === "S"){
+        document.write(`ouve um acrecimo de 150 reis no salario final: R$${salario+200}`);
+    } 
 
     // Saída
 

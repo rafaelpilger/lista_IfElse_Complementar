@@ -12,8 +12,23 @@
     */
 
     // Entrada
-    
+    const valor = Number(prompt("informe o valor do computador que está a venda"));
+    const pagamento = prompt("qual forma a forma de pagamento?  (B)Boleto || (D)Dinheiro || (P)PIX ").trim().toUpperCase();
+
     // Processamento
+    if (pagamento === "B"){
+        const final= valor * (3/100)
+        alert(`Se for paga no boleto, tera um desconto, de 3%; valor final R$${valor - final}`);
+    }
+    else if (pagamento === "D"){
+        const final= valor * (5/100)
+        alert(`Se for paga no dinheiro, tera um desconto, de 5%; valor final R$${valor - final}`);
+    }
+    else if (pagamento === "P"){
+        const final= valor * (10/100)
+        alert(`Se for paga no Pix, tera um desconto, de 10%; valor final R$${valor - final}`);
+    }
+
 
     // Saída
 

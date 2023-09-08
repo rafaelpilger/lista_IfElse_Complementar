@@ -13,8 +13,30 @@
     */
 
     // Entrada
+    let cod = Number(prompt("informe o código de um determinado produto"))
     
     // Processamento
+    if (cod === 1){ 
+      alert(`Alimento não-perecível`)
+    }
+    else if (cod == 2 || cod == 3 || cod == 4){
+        alert(`Alimento perecível`)
+    }
+    else if (cod == 5 || cod == 6){
+        alert(`Vestuário`)
+    }
+    else if (cod == 7){
+        alert("Higiene Pessoal")
+    }
+    else if (cod >= 8 && cod <=15){
+        alert("Limpeza e Utensílios Domésticos")
+    }
+    else if (cod >=16 && cod <=20){
+        alert("Outros")
+    }
+    else{
+        alert(`valor invalido, por favor digite o codigo novamente!`)
+    }
 
     // Saída
 

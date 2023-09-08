@@ -10,9 +10,26 @@
     */
 
     // Entrada
+     let cel = Number(prompt(`informe um valor de temperatura em graus Celsius.`));
     
     // Processamento
 
+    if (cel < 100){
+        alert(`A temperatura esta muito baixa!`);
+    }
+    else if(cel > 100 &&  cel <= 200){
+        alert(`esta baixa`);
+    }
+    else if (cel > 200 && cel < 500){
+        alert (`esta normal!`);
+    }
+    else if (cel >= 500){
+        alert(`esta muito alta!`)
+    }
+    else{
+        alert(`digite apenas numeros!`)
+    }
+    
     // Saída
 
 </script>

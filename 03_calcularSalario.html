@@ -15,8 +15,26 @@
     */
 
     // Entrada
+    let sala = Number(prompt("infome o valor do seu salario"));
     
     // Processamento
+    if(sala <= 2000){
+        const reajuste = sala*(15/100)   
+        alert (`vc teve um aumento salarial, de ${reajuste} o seu salario final ficou, ${sala+reajuste}`)
+    }
+    else if(sala > 2000){
+        const reajuste = sala*(10/100)   
+        alert (`vc teve um aumento salarial, de ${reajuste} o seu salario final ficou, ${sala+reajuste}`)
+    }
+    else if(sala > 4000){
+        const reajuste = sala*(7.5/100)   
+        alert (`vc teve um aumento salarial, de ${reajuste} o seu salario final ficou, ${sala+reajuste}`)
+    }
+    else if(sala > 7000){
+        const reajuste = sala*(5/100)   
+        alert (`vc teve um aumento salarial, de ${reajuste} o seu salario final ficou, ${sala+reajuste}`)
+    } 
+     
 
     // Saída
 

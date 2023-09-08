@@ -2,7 +2,9 @@
 <script>
     // Problema: Período da Viagem
     /*
-    Faça um script que pergunte ao usuário qual a distância da viagem, em quilômetros. Peça também para o usuário informar quantos quilômetros pretende viajar por dia. Calcule quantos dias serão necessários para realizar a viagem. Considere o seguinte cenário:
+    Faça um script que pergunte ao usuário qual a distância da viagem,em quilômetros.
+    Peça também para o usuário informar quantos quilômetros pretende viajar por dia.
+    Calcule quantos dias serão necessários para realizar a viagem. Considere o seguinte cenário:
 
     - Se a viagem demorar até três dias (inclusive), poderá ser realizada em "Qualquer Período";
     - Se a viagem demorar até 10 dias (inclusive), poderá ser realizada nas "Férias de Julho";
@@ -11,9 +13,23 @@
     */
 
     // Entrada
-    
+    let quilometros = Number(prompt(`Qual a distancia total da viagem? em KM`)) 
+    let dia= Number(prompt(`quantos quilometros vc pretende viajar por dia?`)) 
+     const final = quilometros/dia
     // Processamento
-
+    if (final <= 3){
+        alert(`Qualquer Período ${final}`) 
+    } 
+    else if(final >= 3&& final <= 10){
+        alert(`Férias de Julho ${final}`)
+    }
+    else if(final >=10 && final <=20){
+        alert(`Férias de Verão ${final}`) 
+    }
+    else if (final > 20){
+        alert(`vc precisa trabalhar remoto ${final}`)
+    }
+    
     // Saída
 
 </script>

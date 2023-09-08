@@ -12,8 +12,20 @@
     */
 
     // Entrada
-    
+    const preco = Number(prompt("informe o preço do tranporte aéreo para o destinos, de (São Paulo)").trim().replace(",","."));
+    const preco1 = Number(prompt("informe o preço do tranporte aéreo para o destinos de (Rio de Janeiro)").trim().replace(",","."));
+    const preco2 = Number(prompt("informe o preço do hotel, para o destinos de(São Paulo)").trim().replace(",","."));
+    const preco3 = Number(prompt("informe o preço do hotel, para o destinos de (Rio de Janeiro)").trim().replace(",","."));
+    const dias = Number(prompt("quantos dias pretende ficar no destino?").trim().replace(",","."));
+
+    const final = preco + (dias * preco2); 
+    const final2 = preco1 + (dias * preco3);
+
     // Processamento
+    final < final2 ? document.write(`O melhor destino é São Paulo  R$${final.toFixed(2).replace(".",",")}.`)
+    : document.write(`O destino final é Rio Grande do Sul e o custo total da viagem é de R$${final2.toFixed(2).replace(".",",")}.`);
+
+
 
     // Saída
 

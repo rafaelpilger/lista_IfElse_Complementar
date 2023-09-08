@@ -15,8 +15,27 @@
     */
 
     // Entrada
-    
+    const via = Number(prompt("quantas viagens foram realizadas por dia?"))
+    const cargo = prompt("Em qual cargo vc trabalho? (M)-motorista , (C)-cobrador").trim().toUpperCase();
+    const diaria = (100)
     // Processamento
+    if (cargo == "M" && via == 10 ){
+        const final = diaria*(20/100)
+        alert(`recebera um adicional de 20% resultado final do dia ${final+diaria}`)
+    }
+    else if (cargo == "M" && via > 10){
+        const final = diaria*(35/100)
+        alert(`recebera um adicional de 35% resultado final do dia ${final+diaria}`)
+    }
+    else if (cargo == "C" && via == 10){
+        alert("Nao avera adicional")
+    }
+    else if (cargo == "C" && via > 10){
+        const final = diaria*(10/100)
+        alert(`recebera um adicional de 10% resultado final do dia ${final+diaria}`)
+    }
+
+
 
     // Saída
 

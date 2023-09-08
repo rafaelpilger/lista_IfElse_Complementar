@@ -10,8 +10,25 @@
     */
 
     // Entrada
+    let imóvel = Number(prompt(`Qual o valor do imovel que desejas compras?`));
+    let anos = Number(prompt("Em quantos meses sera feito o financiamento? vc pode parcelar até em 300 vezes!"));
+    let salario = Number(prompt("Informe o seu salario!"));
+      
     
     // Processamento
+    const valor = imóvel / anos
+    const prestação =  valor + ((valor * 2)/ 100); 
+    const salario2 = ((salario*30)/100)
+
+    if (anos <= 300){
+        if (prestação > salario2){
+        alert(`O valor da parcela sera de R$${prestação} por mes. mas o imprestimo sera negado pois vc é pobre.`)
+    }
+    else{
+        alert(`O valor da parcela será de R$${prestação} por mês e será concedido!`)
+    }
+}
+
 
     // Saída
 
